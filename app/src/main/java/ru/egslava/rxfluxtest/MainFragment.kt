@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import com.trello.navi.component.support.NaviDialogFragment
 import com.trello.navi.component.support.NaviFragment
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.fragment_main.*
 
 /**
  * Created by egslava on 05/05/16.
@@ -21,12 +22,15 @@ class MainFragment: BaseFragment(){
 
     override fun onViewCreated(view: View?, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        childFragmentManager
-                .beginTransaction()
-                .add(R.id.nested_fragment, NestedFragment())
-                .commit()
+//        childFragmentManager
+//                .beginTransaction()
+//                .add(R.id.nested_fragment, NestedFragment())
+//                .commit()
 
-        callGallery(image_from_galery)
+        pager.adapter = StaticPagerAdapter(context, childFragmentManager, R.array.titles, NestedFragment(), NestedFragment())
+        tabs.setupWithViewPager(pager)
+
+//        callGallery(image_from_galery)
     }
 
 }
