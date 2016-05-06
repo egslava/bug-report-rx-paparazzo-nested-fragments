@@ -2,4 +2,4 @@
 
 In nested fragments, if user was asked about permission of grabbing images from gallery and declined it - RxPaparazzo will call subscribers. In any other case there's no reaction. 
 
-![problem](problem.gif "problem on animation")
+[![problem](problem.gif "problem on animation")](https://youtu.be/s1RlfkxKKpw)
