@@ -55,7 +55,7 @@ dependencies {
     compile 'com.hardsoftstudio:rxflux:0.3.1'
 
     // RxPaparazzo
-    compile "com.github.FuckBoilerplate:RxPaparazzo:0.0.3"
+    compile "com.github.FuckBoilerplate:RxPaparazzo:0.0.4"
 
 }
 buildscript {
